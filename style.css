@@ -1,0 +1,141 @@
+body{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	width:95%;
+	display:flex;
+	justify-content:space-between;
+   margin:1.3rem auto;
+
+}
+.left{
+	width:75%;
+}
+.RIGHT{
+    width:20%;
+}
+.header{
+	width:100%;
+	}
+	.head{
+	width:100%;
+	background-color: orangered;
+  height:6rem;
+}
+.container{
+    width:100%;
+    height: 19rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top:0.5rem;
+} 
+.LEFT{
+	width:48%;
+	height:10rem;
+}
+.col1,.col2{
+	width:100%;
+	height:9rem;
+	background-color:steelblue;
+}
+.col2{
+  margin-top:0.5rem;
+}
+.right{
+	width:50%;
+}
+.box{
+	width:100%;
+	height:18.5rem;
+	background-color:lightblue;
+}
+.big-box{
+    width:100%;
+    background-color:#757575;
+    height:16rem;
+}
+.row{
+    height:43rem;
+  background-color: steelblue;
+}
+
+.footer{
+    width:100%;
+    height:5rem;
+    background-color: orangered;
+} 
+                               /* CSS END */
+                        /*  Mediaqueries Start  */
+          /* Mediaqueries for low Resolution Tablets, Mobilephones */
+    /* 
+         ##Device = Low Resolution Tablets, Mobilephones:
+         ##Screen = B/w 481px to 767px:
+*/
+@media (min-width:100px) and (max-width: 767px) {
+	   .left,.header,.head{
+	   	width:100%;
+      margin-bottom:3rem;
+	   }
+	   .RIGHT{
+	   	display:none
+	   }
+       .container,.BBOX{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+       	flex-direction:column-reverse;
+       	margin:1.3rem auto;
+       	height:15rem;
+       }
+       .box,.right{
+       	width:100%;
+       	height:7.9rem;
+       	margin-bottom:1rem;
+       }
+       .big-box,.LEFT,.col1,.col2{
+       	width:100%;
+       	height:7rem;
+        margin-bottom:1rem
+      }
+       .footer{
+        position:absolute;
+         top:42rem;
+         bottom:0;
+       	width:100%;
+       margin:0px;
+      }
+}
+
+ /* Mediaqueries for iPads,Tablets */
+
+     /*  ##Device = Tablets, Ipads 
+         ##Screen = B/w 768px to 1024px:
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+     .wrapper{
+      width:100%;
+     }
+     .container,.left,.RIGHT{
+        margin:1.5rem auto;
+      }
+      .row{
+        height:43.5rem;
+      }
+   }
+           /*  Mediaqueries for Laptops,Desktops  */ 
+  /* 
+         ##Device = Laptops, Desktops
+         ##Screen = B/w 1025px to 1280px:
+*/
+@media (min-width:1025px) and (max-width:1280px){
+    .container{
+      width:100%;
+      margin:1.3rem auto;
+    }
+    .row{
+      height:43.5rem;
+    }
+    }
+                /*  Mediaqueries END  */
